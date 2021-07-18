@@ -1,6 +1,0 @@
-(07/06/21)
-Used the Date() function to find current date and time
-Displayed these values on the page
-
-(07/13/21)
-Separated the function, window.onload, and setInterval
