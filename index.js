@@ -1,9 +1,9 @@
 function getTime() {
     let date = new Date();
 
-    let weekday = date.getDay();    //day of month (1-31)
-    let day = date.getDate();   //monday, tuesday..
-    let month = date.getMonth() + 1;
+    let weekday = date.getDay();        // 0-6
+    let day = date.getDate();           // 1-31
+    let month = date.getMonth() + 1;    // 0-11
     let year = date.getFullYear();
 
     let h = date.getHours();
@@ -67,6 +67,7 @@ function getTime() {
     ms = (ms < 100 ? "0" + ms : ms);
 
     // future improvement, add all of the timezones to object
+    // https://www.timeanddate.com/time/zones/gmt
     var timezoneString = {
         240 : "EDT",
         300 : "EST",
@@ -74,6 +75,7 @@ function getTime() {
         480 : "PST",
     };
 
+    // date.toString()
     var now = date.toString() + "\n\n" + "(" + month + "/" + day + "/" + year + ")" + "\n" + weekday + "\n" + h + ":" + m + ":" + s + " " + timePeriod + " " + timezoneString[timezone];
 
     document.querySelector("#clock").innerText = now;
