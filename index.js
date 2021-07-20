@@ -31,35 +31,14 @@ function getTime() {
             break;
     }
     
-    switch(weekday) {
-        case (0): {
-            weekday = "Sunday";
-            break;
-        }
-        case (1): {
-            weekday = "Monday";
-            break;
-        }
-        case (2): {
-            weekday = "Tuesday";
-            break;
-        }
-        case (3): {
-            weekday = "Wednesday";
-            break;
-        }
-        case (4): {
-            weekday = "Thursday";
-            break;
-        }
-        case (5): {
-            weekday = "Friday";
-            break;
-        }
-        case (6): {
-            weekday = "Saturday";
-            break;
-        }
+    let pickDay = {
+        0: "Sunday",
+        1: "Monday",
+        2: "Tuesday",
+        3: "Wednesday",
+        4: "Thursday",
+        5: "Friday",
+        6: "Saturday"
     }
 
     m = (m < 10 ? "0" + m : m);
@@ -76,7 +55,7 @@ function getTime() {
     };
 
     // date.toString()
-    var now = date.toString() + "\n\n" + "(" + month + "/" + day + "/" + year + ")" + "\n" + weekday + "\n" + h + ":" + m + ":" + s + " " + timePeriod + " " + timezoneString[timezone];
+    var now = date.toString() + "\n\n" + "(" + month + "/" + day + "/" + year + ")" + "\n" + pickDay[weekday] + "\n" + h + ":" + m + ":" + s + " " + timePeriod + " " + timezoneString[timezone];
 
     document.querySelector("#clock").innerText = now;
 }
