@@ -12,9 +12,9 @@
 <hr>
 
 # :speech_balloon: Project Information
-> **Name:**"clock"  
+> **Name:** "clock"  
 > **Description:** Displays the current date and time.  
 > **Languages:** HTML, CSS, Javascript  
 > **Start Date:** 07/06/2021  
-> **End Date:** --  
+> **End Date:** 07/20/2021  
 > **Screenshot(s):** --  
