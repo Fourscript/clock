@@ -30,7 +30,11 @@ function getTime() {
             timePeriod = "PM";
             break;
     }
-    
+
+    m = (m < 10 ? "0" + m : m);
+    s = (s < 10 ? "0" + s : s);
+    // ms = (ms < 100 ? "0" + ms : ms);
+
     let pickDay = {
         0: "Sunday",
         1: "Monday",
@@ -40,10 +44,6 @@ function getTime() {
         5: "Friday",
         6: "Saturday"
     }
-
-    m = (m < 10 ? "0" + m : m);
-    s = (s < 10 ? "0" + s : s);
-    ms = (ms < 100 ? "0" + ms : ms);
 
     // future improvement, add all of the timezones to object
     // https://www.timeanddate.com/time/zones/gmt
