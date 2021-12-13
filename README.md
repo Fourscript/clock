@@ -4,11 +4,10 @@
 
 <hr>
 
-
 # :speech_balloon: Project Information
 > **Name:** "Homepage Widget: Clock"  
 > **Description:** Displays the user's current date and time.  
-> **Languages:** HTML, CSS, Javascript  
+> **Languages:** HTML, CSS, JavaScript  
 > **Start Date:** 07/06/2021  
 > **End Date:** 07/20/2021  
 > **Links:** https://www.homepage.fourscript.com/  
